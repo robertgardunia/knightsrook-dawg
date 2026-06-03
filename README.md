@@ -26,7 +26,7 @@ docker compose up --build
 ## Development (without Docker)
 
 ```bash
-# Backend
+# Backend (package root is backend/app/)
 cd backend
 uv sync
 uv run uvicorn app.main:app --port 5111 --reload

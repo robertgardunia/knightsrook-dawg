@@ -21,7 +21,7 @@ docker compose up --build
 > First build compiles AGE from source — takes ~3 minutes.
 
 - API: http://localhost:5111/health
-- Dashboard: http://localhost:5311
+- Dashboard: http://localhost:5411
 
 ## Development (without Docker)
 

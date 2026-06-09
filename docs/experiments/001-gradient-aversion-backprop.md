@@ -133,9 +133,10 @@ Also record:
 | Step | Status |
 |------|--------|
 | Schema designed (`runtime.gradient_states`, `runtime.observations`, etc.) | ✅ Done |
-| Graph layer (v0.2 — AGE edges between states) | ⬜ Not started |
-| Backpropagation subsystem | ⬜ Not started |
-| First run | ⬜ Blocked on graph layer |
+| Graph layer (v0.2 — AGE nodes + PRECEDES edges) | ✅ Done |
+| Backpropagation subsystem (`gradient_experiment.apply_aversion`) | ✅ Done |
+| API routes (`POST /api/experiment/sequences`, `/aversion`, `/probe`) | ✅ Done |
+| First run | ⬜ Ready — rebuild Docker and run |
 | Results recorded | ⬜ |
 | Pass/fail determination | ⬜ |
 

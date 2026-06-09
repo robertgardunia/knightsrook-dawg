@@ -9,6 +9,7 @@ from app.events import init_event_bus
 from app.api.health import router as health_router
 from app.api.topics import router as topics_router
 from app.api.store import router as store_router
+from app.api.experiment import router as experiment_router
 from app.dashboard_stream import router as stream_router
 
 
@@ -33,4 +34,5 @@ app.add_middleware(
 app.include_router(health_router)
 app.include_router(topics_router)
 app.include_router(store_router)
+app.include_router(experiment_router)
 app.include_router(stream_router)

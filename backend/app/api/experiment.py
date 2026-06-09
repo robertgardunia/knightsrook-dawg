@@ -33,6 +33,17 @@ class ProbeRequest(BaseModel):
     notes: Optional[str] = None
 
 
+@router.get("/sequences")
+async def list_sequences():
+    from app.db import get_pool
+    pool = get_pool()
+    async with pool.acquire() as conn:
+        rows = await conn.fetch(
+            "SELECT id, name, description, status, created_at FROM runtime.gradient_sequences ORDER BY created_at DESC"
+        )
+    return {"success": True, "data": [dict(r) for r in rows]}
+
+
 @router.post("/sequences", status_code=201)
 async def create_sequence(body: SequenceCreate):
     """

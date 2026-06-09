@@ -59,6 +59,7 @@ Every experiment gets a design doc before it runs. All results are recorded rega
 | GET | `/api/store/entries` | Retrieve multi-signal surface |
 | GET | `/api/store/entries/{id}` | Get entry + record access |
 | GET | `/api/store/entries/{id}/events` | Full event log for entry |
+| GET | `/api/experiment/sequences` | List all sequences |
 | POST | `/api/experiment/sequences` | Create gradient sequence (nodes + edges) |
 | GET | `/api/experiment/sequences/{id}` | Get sequence with current aversion weights |
 | POST | `/api/experiment/sequences/{id}/aversion` | Apply aversion event + backpropagate |

@@ -41,6 +41,13 @@ npm run dev   # proxies /api and /ws to :5111
 
 See [docs/architecture/overview.md](docs/architecture/overview.md).
 
+## Experiments & Concepts
+
+- [docs/experiments/](docs/experiments/) — experiment design docs; results appended after each run
+- [docs/concepts/](docs/concepts/) — crystallized concepts from design and experiment work
+
+Every experiment gets a design doc before it runs. All results are recorded regardless of outcome.
+
 ## API
 
 | Method | Path | Description |
